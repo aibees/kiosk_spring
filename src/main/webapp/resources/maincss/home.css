@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+html, body {
+	height:100%;
+}
+
+body {
+	display: table;
+	margin: 0 auto;
+}
+
+
+.main-login {
+	display: table;
+	width: 100%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.main-login .login-container {
+	display: table-cell;
+	vertical-align: middle;
+}
