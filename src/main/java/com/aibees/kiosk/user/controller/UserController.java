@@ -27,11 +27,11 @@ public class UserController {
 	// login 처리 후 session 등록과 이전 페이지로 넘어가는 부분은
 	// TODO : 추후 Intercepter 처리하면서 update 될 예정
 	@RequestMapping(value="/login.do", method=RequestMethod.POST)
-	public void login(CustomerDTO customerdto, Model model) {
+	public String login(CustomerDTO customerdto, Model model) {
 		System.out.println("customer : " + customerdto);
 		Object result = service.LoginData(customerdto);
 		System.out.println("result : " + result);
 		model.addAttribute("loginUserModel", result);
-		return;
+		return "home";
 	}
 }

@@ -26,6 +26,7 @@
 			
 			<c:if test="${loginUser != null}"> <!-- 로그인 한 상태 -->
 				<h1>login</h1>
+				<h2>${loginUser.name}님 반갑습니다.</h2>
 				<!-- <script type="text/javascript">
 					location.href="main.do";
 				</script> -->

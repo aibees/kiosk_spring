@@ -2,6 +2,7 @@ package com.aibees.kiosk.user.util;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.ui.ModelMap;
 import org.springframework.web.servlet.ModelAndView;
@@ -15,5 +16,9 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
 		ModelMap model = modelAndView.getModelMap();
 		
 		Object obj = model.get("loginUserModel");
+		if(obj != null) {
+			HttpSession session = request.getSession();
+			session.setAttribute("loginUser", obj);
+		}
 	}
 }

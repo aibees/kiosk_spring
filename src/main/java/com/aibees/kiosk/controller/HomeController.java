@@ -13,11 +13,6 @@ public class HomeController {
 	
 	@RequestMapping("/main.do")
 	public String home(Model model) {
-		
-		String formattedDate = "hello Spring Framework";
-		
-		model.addAttribute("serverTime", formattedDate );
-		
 		return "home";
 	}
 	
