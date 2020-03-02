@@ -16,7 +16,7 @@
 					<div>
 						<h1>Ajou Library Kiosk</h1>
 					</div>
-					<form name="lofingForm" method="post" action="/login.do">
+					<form name="lofingForm" method="post" action="/kiosk/login.do">
 						<input type="text" id="id" name="id" /> <br/>
 						<input type="text" id="pwd" name="pwd" /> <br/>
 						<input type="submit" id="loginBtn" value="LOGIN" />

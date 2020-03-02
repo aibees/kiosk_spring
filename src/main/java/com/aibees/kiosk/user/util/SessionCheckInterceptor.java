@@ -15,7 +15,6 @@ public class SessionCheckInterceptor extends HandlerInterceptorAdapter {
 		if(session.getAttribute("loginUser") == null) {
 			System.out.println("session is null");
 			
-			// LOGIN으로 다시 돌려 보내지만, 로그인 후 지금 있는 페이지로 다시 돌아올 수 있도록 작업해준다.
 			String uri = request.getRequestURI();
 			String query = request.getQueryString();
 			String path = uri;
